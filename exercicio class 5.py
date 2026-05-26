@@ -104,7 +104,13 @@ class FormatadorDeFrase():
         palavras = self.frase.lower().split()
         quantidade = palavras.count(palavra.lower())
 
-        print(f'A {palavra} aparece {quantidade} vezes na frase')
+        if palavra >0:
+            
+            print(f'A {palavra} aparece {quantidade} vezes na frase')
+
+        else:
+
+            print(f'A palavra{palavra} não aparece na frase')
 
     def obter_frase(self):
 
