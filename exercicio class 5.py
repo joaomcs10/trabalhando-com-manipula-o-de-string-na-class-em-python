@@ -77,7 +77,7 @@ class FormatadorDeFrase():
 
     def contar_vogais(self):
 
-        vogais = [letra for letra in self.frase if letra in 'aeiouAEIOU']
+        vogais = [letra for letra in self.frase.lower() if letra in 'aeiouáéíóúàèìòùâêîôûãõ']
 
         print(f'Essa frase possui {len(vogais)} vogais.')
 
@@ -85,7 +85,7 @@ class FormatadorDeFrase():
 
     def contar_consoantes(self):
 
-        concoentes = [letra for letra in self.frase if letra.isalpha() and not letra in 'aeiouAEIOU']
+        concoentes = [letra for letra in self.frase.lower() if letra  letra in 'bcdfghjklmnpqrstvxzç']
 
         print(f'Essa frase possui {len(concoentes)} de consoantes.')
 
